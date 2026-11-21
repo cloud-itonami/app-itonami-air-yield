@@ -61,7 +61,7 @@ ingress capability が qualify した時に **最初に `.kotoba` へ移る部�
 どの bundle にも入っていなかった。移行後の Worker は `/health` を **持つ**。
 純ローカルな handler で上流も binding も要らない。
 
-## いま在るもの — 28 ファイル
+## いま在るもの — 29 ファイル
 
 | 面 | ファイル |
 |---|---|
@@ -73,7 +73,7 @@ ingress capability が qualify した時に **最初に `.kotoba` へ移る部�
 | Worker 設定 | `wrangler.jsonc` |
 | actor 記述子 | `kotodama.jsonld` |
 | 領域ライブラリ（**移行対象外**） | `kotoba/`（7 ファイル、42,307 バイト） |
-| 由来・権利・識別 | `NOTICE` / `README.edn` / `migration.edn` / `MIGRATION-TODO.md` |
+| 由来・権利・識別 | `NOTICE` / `README.edn` / `migration.edn` / `MIGRATION-TODO.md` / `blueprint.edn` |
 | 文書 | `README.md` / `docs/operator-quickstart.md` / `docs/adr/0001-*.edn` |
 
 **appview の TypeScript は 0 本、正本言語（`.kotoba`）が 4 本。**

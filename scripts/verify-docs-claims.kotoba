@@ -23,7 +23,7 @@
 ;; kotoba/src/types.ts, kotoba/test/air-yield.test.ts, kotodama.jsonld diverged from upstream ON PURPOSE; the hashes and byte totals pinned below are the
 ;; new content.
 (def claims
-  {:tracked-files 28
+  {:tracked-files 29
    :inherited-bytes 4323           ; 継承した 5 ファイルを 1 バイトも変えていない
    :svelte-artifacts 0             ; .svelte / svelte.config / svelte/ が 1 つも残らない
    :sveltekit-compat-flags 0       ; nodejs_compat / nodejs_als は adapter-cloudflare のもの
