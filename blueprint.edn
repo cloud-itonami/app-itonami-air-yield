@@ -1,7 +1,7 @@
 {:itonami.blueprint/id "air-yield"
  :itonami.blueprint/name "air-yield — airline revenue management appview"
- ;; One classification key (itonami-lib blueprint.edn schema): ISIC Rev.4 class 5110,
- ;; chosen from README.md for the registry catalog (JUN-1439). Equivalence to
- ;; ISIC Rev.5 is not checked here; the lib code table decides that.
- :itonami.blueprint/isic-rev4 "5110"
+ ;; One classification key (itonami-lib blueprint.edn schema): ISIC Rev.5 class 5110 (the same code exists in Rev.5),
+ ;; chosen from README.md for the registry catalog (JUN-1439).
+ ;; checked against cloud-itonami/app-itonami-org-un-isic.
+ :itonami.blueprint/isic-rev5 "5110"
  :itonami.blueprint/domain :aviation/revenue-management}
