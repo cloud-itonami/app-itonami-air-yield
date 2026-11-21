@@ -1,6 +1,6 @@
 {
   "@context": "https://etzhayyim.com/ns/kotodama/v1",
-  "@id": "did:web:air-yield.etzhayyim.com",
+  "@id": "did:web:air-yield.itonami.app",
   "name": "air-yield",
   "nanoid": "a1ry13ld",
   "project": "air-yield",

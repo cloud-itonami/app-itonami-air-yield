@@ -48,7 +48,7 @@
               "AGENTGATEWAY_MCP_ROUTER_URL" router-url})
 
 (defn- call [h method path]
-  (let [req (js/Request. (str "https://air-yield.etzhayyim.com" path) #js {:method method})]
+  (let [req (js/Request. (str "https://air-yield.itonami.app" path) #js {:method method})]
     (-> (js/Promise.resolve ((.-fetch h) req env #js {}))
         (.then (fn [res] (-> (.text res)
                              (.then (fn [body] {:status (.-status res)

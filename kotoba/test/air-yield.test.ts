@@ -15,7 +15,7 @@ import {
   coverage,
 } from "../src/index.js";
 
-const OWNER = "did:web:air-yield.etzhayyim.com";
+const OWNER = "did:web:air-yield.itonami.app";
 
 describe("air-yield kotoba (kotoba-E2E split)", () => {
   let e: any;
