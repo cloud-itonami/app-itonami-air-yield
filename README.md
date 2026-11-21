@@ -155,12 +155,12 @@ design-quality のスコアはこの区別をしない。CLI 自身が
 `axes scored: 10 … A pass says nothing about an axis that was not applied` と
 出力する。「DADS が実際に入っている」と言えるのは smoke の 2 本目だけである。
 
-## 呼び先が 1 つも解決しない（移行では直らない）
+## 呼び先に 1 つも到達できない（移行では直らない）
 
 | ホスト | 役割 | DNS（2026-08-18 実測） |
 |---|---|---|
-| `air-yield.itonami.app` | 公開ホスト（wrangler の route） | **無回答** |
-| `a1ry13ld.itonami.app` | 同（nanoid 側） | **無回答** |
+| `air-yield.itonami.app` | 公開ホスト（wrangler の route） | 解決する。応答は **522**（2026-11-21 実測） |
+| `a1ry13ld.itonami.app` | 同（nanoid 側） | 解決する。応答は **522**（2026-11-21 実測） |
 | `mcp.etzhayyim.com` | `/xrpc/:nsid` の中継先 | **無回答** |
 | `dispatcher.etzhayyim.com` | 移していない `src/app.ts` の中継先 | **無回答** |
 
