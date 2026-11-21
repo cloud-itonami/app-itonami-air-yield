@@ -62,7 +62,7 @@ export const GROUP_BOOKING_INNER_TYPE = "com.etzhayyim.apps.airYield.groupBookin
 export const PRICING_DECISION_INNER_TYPE = "com.etzhayyim.apps.airYield.pricingDecision";
 export const REVENUE_REPORT_INNER_TYPE = "com.etzhayyim.apps.airYield.revenueReport";
 
-export const AIR_YIELD_DID_PREFIX = "did:web:air-yield.etzhayyim.com:" as const;
+export const AIR_YIELD_DID_PREFIX = "did:web:air-yield.itonami.app:" as const;
 
 // ─── Fare class (PLAINTEXT, public reference catalog) ────────────────
 

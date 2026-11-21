@@ -19,15 +19,18 @@
 
 (def root (or (first (remove #(str/starts-with? % "--") *command-line-args*)) "."))
 
+;; JUN-1410 (2026-11-21): the did:web host and the wrangler routes moved to itonami.app.
+;; kotoba/src/types.ts, kotoba/test/air-yield.test.ts, kotodama.jsonld diverged from upstream ON PURPOSE; the hashes and byte totals pinned below are the
+;; new content.
 (def claims
   {:tracked-files 28
-   :inherited-bytes 4325           ; 継承した 5 ファイルを 1 バイトも変えていない
+   :inherited-bytes 4323           ; 継承した 5 ファイルを 1 バイトも変えていない
    :svelte-artifacts 0             ; .svelte / svelte.config / svelte/ が 1 つも残らない
    :sveltekit-compat-flags 0       ; nodejs_compat / nodejs_als は adapter-cloudflare のもの
    :appview-ts-files 0             ; appview の TypeScript は 0（kotoba/ は別勘定、下記）
    :appview-canonical-files 4      ; route.cljc / view.cljc / worker.cljs + route_test.cljc
    :kotoba-library-files 7         ; 移行対象ではない領域ライブラリ。**増えたら落ちる**
-   :kotoba-library-bytes 42307
+   :kotoba-library-bytes 42303
    :declared-vars 8
    :declared-routes 2
    :wrangler-main "dist/worker.js"
@@ -41,7 +44,7 @@
    "NOTICE"            "9d3bd5678f857c647a465987cd8538580215416648991fd9de47e6dc648544f0"
    "README.edn"        "6dbc0d7dc69a76e3eac2e80c4cc638424ab9c173c6f1dcc820c020b373392748"
    "migration.edn"     "75ab712ec8eb112e83ac52ff336fff5f899c7af00e8cfe218842a8fabbc589e8"
-   "kotodama.jsonld"   "43151c46b971341870fc88cbad8d4129db6efe06526ee6a5341dab39c25d8d3c"})
+   "kotodama.jsonld"   "12484392acf1a1bfa712ee352545a24abc51c55f62992f5852918fc834e12a9a"})
 
 ;; kotoba/ は **移行対象ではない** TypeScript の領域ライブラリである。どの bundle
 ;; にも入らず（wrangler の main は dist/worker.js）、撤去した何物からも参照されず、
@@ -52,8 +55,8 @@
   {"kotoba/package.json"          "1334ccf53d0e6a55c6cc0ccf57e2a07f35478e23f7c248ca089747bc4a4dc601"
    "kotoba/src/index.ts"          "e042528cd4b5ee28dca81e1df3cbc785626a28ca8c399aa639b91fac9255cc82"
    "kotoba/src/registry.ts"       "f2e2418420857009ca285a60e17fc1abbbcd999c6263e29ec1b416bd0ac16f8d"
-   "kotoba/src/types.ts"          "12bda9b701c55006254f4f5102e73f6ed951d29af30e21a8025ee77a0a8c296f"
-   "kotoba/test/air-yield.test.ts" "686f03a621b930ce25d18d8f8c3e8f7ac2fd8a34ec17775f97b0ea88093f65bd"
+   "kotoba/src/types.ts"          "15ca8787f9c47757dceda19c26ae2e084a87b267faf832db3ea360b28608be48"
+   "kotoba/test/air-yield.test.ts" "a86ac781b714ee249329f8366f8a98c8217e8a8d13f8ad2d89d91adb75aa53c2"
    "kotoba/tsconfig.json"         "95a429e51d6162cb7205b603f745e7604d93ffbb1ea6c346e5c6215a79ae541e"
    "kotoba/vitest.config.ts"      "f82a551ef4da1c9cbf17985a3bee96eee450a3e4a46bff0d96c6150263121eff"})
 

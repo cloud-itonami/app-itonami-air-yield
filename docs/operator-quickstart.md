@@ -36,14 +36,14 @@ npx --yes kbb --backend sci scripts/verify-docs-claims.cljk .
 ```
 SCANNED	25
 PASS	tracked-files	expected=25	actual=25
-PASS	inherited-bytes	expected=4325	actual=4325
+PASS	inherited-bytes	expected=4323	actual=4323
 PASS	preserved-files-unchanged	expected=[]	actual=[]
 PASS	removed-by-migration-absent	expected=[]	actual=[]
 PASS	svelte-artifacts	expected=0	actual=0
 PASS	appview-ts-files	expected=0	actual=0
 PASS	appview-canonical-files	expected=4	actual=4
 PASS	kotoba-library-files	expected=7	actual=7
-PASS	kotoba-library-bytes	expected=42307	actual=42307
+PASS	kotoba-library-bytes	expected=42303	actual=42303
 PASS	kotoba-library-unchanged	expected=[]	actual=[]
 PASS	wrangler-main	expected="dist/worker.js"	actual="dist/worker.js"
 PASS	declared-vars	expected=8	actual=8
@@ -252,8 +252,8 @@ cd kotoba && npm install
 ## 7. やっていないこと
 
 - **deploy していない。** `wrangler deploy` は実行していない（`wrangler dev
-  --local` のみ）。そもそも `air-yield.etzhayyim.com` /
-  `a1ry13ld.etzhayyim.com` はどちらも DNS を返さない。
+  --local` のみ）。そもそも `air-yield.itonami.app` /
+  `a1ry13ld.itonami.app` はどちらも DNS を返さない。
 - **`kotoba/` の 9 tests**（§6）。
 - **`MIGRATION-TODO.md` の憲章適合レビュー 7 項目**。文書自身が未実施と書いて
   おり、移行はそれを変えない。
